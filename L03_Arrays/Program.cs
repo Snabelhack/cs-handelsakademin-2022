@@ -1,6 +1,6 @@
 ﻿namespace L03_Arrays;
 
-class Program
+class Functions
 {
     static void Main(string[] args)
     {
