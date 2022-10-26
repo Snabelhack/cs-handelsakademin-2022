@@ -190,7 +190,6 @@ static class Methods
             }
         }
         return sliceitems;
-        
     }
     
     /// <summary>
@@ -230,38 +229,33 @@ static class Methods
     /// PrimesUpTo(1) = { }
     /// PrimesUpTo(0) = { }
     /// </example>
-    /*public static int[] PrimesUpTo(int max)
+    public static int[] PrimesUpTo(int number)
     {
         // Create array from index 0 to max --> max+1 spaces.
-        bool[] notprimes = new bool[max + 1];
-        
-        for (int i = 0; i <= max; i++)
-        {
-            notprimes[i] = true;
-        }
+        bool[] isprime = new bool[number + 1];
+        int[] primenumbers;
 
-        //int[] nbrserie = new int[max];
-        int[] primes = new int[max];
-        primes[0] = 1;
-        for (int i = 2; i <= primes.Length; i++)
+        // Set all values in array to true 
+        for (int i = 0; i <= number; i++)
         {
-            if (i*i + i = )
-            primes[i] = 
-        }
-        for (int i = 2; i <= max; i++)
-        {
-            nbrserie[i] = i; // Fill 
+            isprime[i] = true;
         }
         
-        for (int j = 0; j < nbrserie.Length; j++)
+        // Go over all iterations of 
+        for (int p = 2; p * p <= number; p++)
         {
-            if (nbrserie[j] % j == 0)
+            if (isprime[p] == true)
             {
-                nbrserie[j].
+                // Update all multiples of p to false
+                for (int i = p * p; i <= number; i += p)
+                {
+                    isprime[i] = false;
+                }
             }
         }
-        return default;
-    }*/
+
+        return primenumbers;
+    }
 
     #region For enthusiasts
     /// <summary>
