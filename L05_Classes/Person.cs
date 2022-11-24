@@ -1,7 +1,12 @@
 namespace L05_Classes;
 
 // How to define the class and its members?
+
+// Assuming the person class can be used in an application and contains sensitive information about a person. Define by private field mambers that are accessed by get set methods. 
+
 // What is the purpose of this class?
+
+// Purpose is to describe all the features of a person tha t
 
 // [visibility] class [class name]
 
@@ -17,6 +22,13 @@ public class Person
     private string _name;
 
     #endregion
+
+    private string _firstname;
+    private string _lastname;
+    private string _firstname;
+    private int _personnumber;
+    private string _adress;
+    
 
     #region Constructor
     
